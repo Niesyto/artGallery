@@ -78,28 +78,31 @@ function Home() {
                     </div>
                     <br/>
                     <Button variant="contained" className={classes.root}>Plan Your Visit</Button>
-                    <div style={{position: 'fixed', bottom: 0, width:"100%"}}>
-                        <div style={{float:'right', width:"50%"}}>
-                            <RoomIcon className={classes.fontRed} style={{fontSize:'32px', }}/>
-                            <Typography variant="caption" className={classes.fontRed} style={{marginLeft:'7px', fontWeight:"bold"}}>
-                            Open Today<br/>
-                            10:00am - 5:30pm
-                            </Typography>
-                        </div>
-                        <div style={{float:'left', width:"50%"}}>
-                            <WatchLaterIcon className={classes.fontRed} style={{fontSize:'32px', }} />
-                            <Typography variant="caption" className={classes.fontRed} style={{marginLeft:'7px', fontWeight:"bold"}}>
-                            151 3rd St <br/>
-                            San Francisco, CA 94013
-                            </Typography>
-                        </div>
-                    </div>
+                  
                 </Grid>
-                <Grid item xs={false} md={4} ></Grid>
-                           
-                            
+                <Grid item xs={false} md={4} ></Grid>                      
         </Grid>
 
+        <Grid container alignItems="center">
+                <Grid item xs={1} > 
+                    <RoomIcon className={classes.fontRed} style={{fontSize:'24px'}}/>
+                </Grid>
+                <Grid item xs={4} > 
+                    <Typography variant="caption" className={classes.fontRed}>
+                        Open Today<br/>
+                        10:00am - 5:30pm
+                    </Typography>
+                </Grid>
+                <Grid item xs={1} style={{marginLeft:"50px"}}> 
+                    <WatchLaterIcon className={classes.fontRed} style={{fontSize:'24px'}} />
+                </Grid>
+                <Grid item xs={4} > 
+                    <Typography variant="caption" className={classes.fontRed}>
+                        151 3rd St <br/>
+                        San Francisco, CA 94013
+                    </Typography>
+                </Grid>
+        </Grid>   
       
        </>
     );

@@ -6,14 +6,15 @@ import TabPanel from './TabPanel.js';
 import Tickets from './Tickets.js'
 import Collections from './Collections.js'
 import Home from './Home.js'
+import Shop from './Shop.js'
 import Exhibition from './Exhibition.js'
+import './App.css'
 
 
 
 function App() {
   const [isLoggedIn,setIsLoggedIn] = React.useState(false);
   const [selectedOption,setSelectedOption] = React.useState(6);
-
 
   if(isLoggedIn)
   return (
@@ -36,7 +37,7 @@ function App() {
           {selectedOption}
         </TabPanel>    
         <TabPanel value={selectedOption} index={5}>
-          {selectedOption}
+          <Shop/>
         </TabPanel>    
         <TabPanel value={selectedOption} index={6}>
           <Home/>
@@ -46,7 +47,7 @@ function App() {
   else
   return (
     <>
-        <CssBaseline/>
+        <div class="bg-image"> </div>
         <Login isLoggedIn={setIsLoggedIn}/>
     </>
   );

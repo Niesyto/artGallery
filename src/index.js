@@ -12,6 +12,9 @@ const theme = createMuiTheme({
         background: {
             default: '#ffffff'
         }
+    },
+    typography:{
+    fontFamily: 'Montserrat, sans-serif'
     }
 })
 
